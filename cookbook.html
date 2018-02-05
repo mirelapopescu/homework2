@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>COOKBOOK</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <script src="https://use.fontawesome.com/f62b2d6069.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1><i class="fa fa-cutlery"></i>iQuest Cook Boook</h1>
+            </div>
+        </header>
+        <nav>
+            <div class="col-1">
+                <h2><i class="fa fa-plus"></i>New recipe</h2>
+            </div>
+            <div class="col-2">
+                <select name="text">
+                    <option value="1"> Select a recipe...</option>
+                    <option value="2">Scambled egg omlette</option>                     
+                </select>
+            </div>
+        </nav>
+
+        <div class="container"> 
+            <form>
+                <section class="info backg">
+                    <h2><i class="fa fa-info"></i>About</h2>
+                    <div class="about">
+                        <p>Recipe title</p>
+                        <input type="text" placeholder="Title"/>
+                        <p>Description</p>
+                        <textarea rows="10">About the recipe</textarea>
+                        <div class="box-1">
+                            <p>Portions
+                                <select name="text">
+                                    <option value="1" selected>1</option> 
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </p>
+                        </div>
+                        <div class="box-2">
+                            <p>Time(mins)
+                                <select name="text">
+                                    <option value="5" selected>5</option> 
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="30">30</option>
+                                    <option value="45">45</option>
+                                    <option value="60">60</option>
+                                    <option value="90">90</option>
+                                    <option value="120">120</option>
+                                </select>
+                            </p>
+                        </div>
+                        <div class="box-3">
+                            <p>Dificulty
+                                <select name="text">
+                                    <option value="1" selected>1</option> 
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="ingredients backg">
+                    <h2><i class="fa fa-list"></i>Ingredients</h2>
+                    <ul>
+                        <li><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i> 300 g brown rice</li>
+                        <li><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i> 2 pc red onions</li>
+                        <li><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i> 1 pc frech red chilli</li>
+                        <li><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i> 25 g unsalted butter </li>
+                        <li><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-right"></i> 6 pc large free-range eggs</li>
+                    </ul>
+                    <div class="imh">
+                        <div class="p1">
+                            <input class="q" type="text" placeholder="QTY."/>
+                        </div>
+                        <div class="p2">
+                            <select name="text">
+                                <option value="0" selected>Unit</option> 
+                                <option value="1">g</option> 
+                                <option value="2">Kg</option>
+                                <option value="3">pc</option>
+                                <option value="4">ml</option>
+                                <option value="5">l</option>
+                                <option value="6">tea spoon(s)</option>                            
+                            </select>
+                        </div>
+                        <div class="p3">
+                            <span>of</span>
+                        </div>
+                        <div class="p4">
+                            <input class="ing" type="text" placeholder="Ingredient"/>
+                        </div>
+                        <button class="ads"><i class="fa fa-plus-square"></i></button>
+
+                    </div>
+
+                </section>
+                <section class="steps backg">
+                    <h2><i class="fa fa-list-ol"></i>Steps</h2>
+                    <ol>
+                        <li>Cook the rice in a pan of boiling salted water according to the pcket instrunctions, then drain and refresh under cold water, leaving it in the colander.</li>
+                        <li>At the same time, poach the fish in a large pan of simmering salted water on a medium heat for 10 minutes, then carefully remove with a slotted spoon. Turn the heat up under the poaching water and bring back to a good simmer. </li>
+                        <li>Meanwhile, peel the onions and finely slice with the red chilli (deseed if you like) and coriander stalks. Peel and finely chop the garlic and ginger. PLace it all in a large frying pan on a medium heat with 1 tablespoon of oil and the butter, and cook for 10 minutes, or until soft but not colored, stirring occasionally.</li>
+                    </ol>
+                    <p>Step</p>
+                    <textarea rows="10">Step description</textarea>
+                    <button class="add_s"><i class="fa fa-plus-square"></i> Add step</button>
+
+                </section>
+                <button class="trash"><i class="fa fa-trash-o"></i>Cancel</button>
+                <button class="save"><i class="fa fa-floppy-o"></i>Save recipe</button>
+            </form>
+        </div>
+
+    </body>
+</html>

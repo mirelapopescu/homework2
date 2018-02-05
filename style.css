@@ -1,0 +1,262 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 5, 2018, 15:07:08 AM
+    Author     : mirela
+*/
+body{
+    margin:0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #f9f9f9;
+}
+.container {
+    width: 1000px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;    
+}
+header{
+    background-color: #d94e44;
+}
+.container h1{
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+.container i{
+    padding-right: 5px;
+}
+nav{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+}
+.col-1, .col-2{
+    width: 50%;
+    float: left;
+    text-align: center;
+    border-bottom: 1px solid #d6d4d4;
+    line-height: 60px;
+    background-color: #fff;
+}
+.col-1 h2{
+    border-right: 1px solid #d6d4d4;
+}
+.col-1 h2{
+    margin: 0;
+}
+.backg{
+    background-color: #f6f4f4;
+    padding: 0 25px 90px;
+    display: block;
+    margin-bottom: 15px;
+    margin-top:15px;
+
+}
+.info h2, .ingredients h2, .steps h2{
+    background-color: #db4d3f;
+    padding: 15px;
+    line-height: 40px;
+    color: #fff;
+    margin-right: -25px;
+    margin-left: -25px;
+}
+.box-1, .box-2, .box-3{
+    width: 33.333333%;
+    float: left;
+}
+.col-2 select{
+    width: 150px;
+}
+select {
+    background: #fff;
+    border: 1px solid #d6d4d4;
+    border-radius: 4px;
+    height: 46px;
+    padding: 5px;
+
+}
+.backg select{
+    border: 1px solid #fff;
+}
+.info .about input{
+    width: 96.5%;
+    border:1px solid #fff;
+    border-radius:2px;
+    background-color: #fff; 
+    padding: 15px;
+}
+.info .about textarea, .steps textarea{
+    text-decoration: none;
+    background-color: #fff;
+    width: 96.5%;
+    border:1px solid #fff;
+    border-radius:2px;
+    padding: 15px;
+}
+.ingredients ul{
+    list-style: none;
+}
+.ingredients ul li i{
+    font-size: small;
+    color: #db4d3f;
+    padding-right: 0;
+}
+.add_s{
+    width: 100%;
+    border: 1px solid #db4d3f;
+    color: #db4d3f;
+    background: #fff;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+.add_s:hover{
+    color: #fff;
+    background: #db4d3f;
+}
+.trash{
+    width: 50%;
+    border: 1px solid #db4d3f;
+    color: #db4d3f;
+    background: #fff;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 20px;
+    float: left;
+    margin-bottom: 50px;
+}
+.trash:hover{
+    color: #fff;
+    background: #db4d3f;
+}
+.save{
+    width: 50%;
+    border: 1px solid #db4d3f;
+    color: #fff;
+    background: #db4d3f;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 20px;
+    float: left;
+    margin-bottom: 50px;
+}
+.save:hover{
+    color: #db4d3f;
+    background: #fff;
+}
+.imh{
+    width: 100%;
+    float: left;    
+}
+.ads{
+    border: 1px solid #db4d3f;
+    color: #db4d3f;
+    background: #fff;
+    border-radius: 4px;
+    padding: 14px;
+    float: right;
+    text-align: center;
+}
+.ads i{
+    padding: 0;
+}
+.imh input{
+    background: #fff;
+    border: 0;
+    border-radius: 4px;
+    padding: 15px;
+}
+.p1{
+    width: 20%;
+    float: left;
+}
+.p1 input{
+    width: 60px;
+}
+.p2{
+    width: 20%;
+    float: left;
+}
+.p3 span{
+    line-height: 46px;
+}
+.p3{
+    float: left;
+    width: 10%;
+}
+.p4{
+    width: 30%;
+    float: left;
+}
+
+@media(min-width:320px) and (max-width:1199px){
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+
+}
+@media(min-width:320px) and (max-width:480px){
+    .p3{
+        display: none;
+    }
+    .p4 .ing{
+        width: 90px;
+    }
+    h1, h2{
+        font-size: large;
+    }
+    .box-1, .box-3{
+        width: 30%;
+    }
+    .box-2{
+        width: 40%;
+    }
+}
+@media(min-width:320px) and (max-width:680px){
+    select{
+        height: 36px;
+    }
+    .p3{
+        display: none;
+    }
+    .p2{
+        width: 29%;
+    }
+    .p4{
+        width: 29%;
+    }
+    .p1 input {
+        width: 30px;
+        padding: 10px;
+    }
+    .p2 select{
+        width: 70px;
+        height: 36px;
+    }
+    .p4 input{
+        width: 75px;
+        padding: 10px;
+    }
+    .ads{
+        padding: 9px;
+    }
+}
+/*no more time...... :(*/
