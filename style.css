@@ -27,6 +27,16 @@ body{
 header{
     background-color: #d94e44;
 }
+h1, h2{
+    line-height: 3.6rem;
+}
+h1, .h1 {
+    font-size: 2.5rem;
+}
+
+h2, .h2 {
+    font-size: 2rem;
+}
 .container h1{
     text-align: center;
     color: #fff;
@@ -49,7 +59,7 @@ nav{
     float: left;
     text-align: center;
     border-bottom: 1px solid #d6d4d4;
-    line-height: 60px;
+    line-height: 3.6;
     background-color: #fff;
 }
 .col-1 h2{
@@ -78,6 +88,10 @@ nav{
     width: 33.333333%;
     float: left;
 }
+.box-1 p, .box-2 p, .box-3 p{
+    width: 20%;
+    float: left;
+}
 .col-2 select{
     width: 150px;
 }
@@ -87,6 +101,7 @@ select {
     border-radius: 4px;
     height: 46px;
     padding: 5px;
+    width: 46px;
 
 }
 .backg select{
@@ -142,8 +157,10 @@ select {
     margin-bottom: 50px;
 }
 .trash:hover{
-    color: #fff;
-    background: #db4d3f;
+    border: 4px solid #db4d3f;
+    color: #db4d3f;
+    background: #fff;
+    padding: 12px;
 }
 .save{
     width: 50%;
@@ -158,8 +175,10 @@ select {
     margin-bottom: 50px;
 }
 .save:hover{
+    border: 4px solid #db4d3f;
     color: #db4d3f;
     background: #fff;
+    padding: 12px;
 }
 .imh{
     width: 100%;
@@ -171,6 +190,14 @@ select {
     background: #fff;
     border-radius: 4px;
     padding: 14px;
+    float: right;
+    text-align: center;
+}
+.ads:hover{
+    border: 1px solid #db4d3f;
+    background: #db4d3f;
+    color: #fff;
+    border-radius: 4px;
     float: right;
     text-align: center;
 }
@@ -205,7 +232,80 @@ select {
     width: 30%;
     float: left;
 }
+select{
+    -moz-appearance: none;
+    -webkit-appearance:none;
+    appearance:none;
+    text-overflow: ellipsis;
+    padding-right: 20px
 
+}
+.select {    
+    overflow: hidden;   
+    position: relative;
+    display: block;
+    width: 150px;
+    line-height: 3.6;
+    margin: auto;
+}
+
+.select:after {
+    content:"\f0dc";
+    font-family: FontAwesome;
+    color: #000;
+    padding: 0 14px;
+    position: absolute; right: 0; top: 0;
+    z-index: 1;
+    text-align: center;
+
+    pointer-events: none;
+    box-sizing: border-box;   
+}
+.select_info {    
+    overflow: hidden;   
+    position: relative;
+    display: block;
+    width: 46px;
+    line-height: 3.6;
+    margin: auto;
+}
+.select_info select{
+    padding: 0;
+}
+
+.select_info:after {
+    content:"\f0dc";
+    font-family: FontAwesome;
+    color: #000;
+    padding: 0 7px;
+    position: absolute; right: 0; top: 0;
+    z-index: 1;
+    text-align: center;       
+    pointer-events: none;
+    box-sizing: border-box;   
+}
+.select_ing select{
+    width: 74px;
+}
+.select_ing{
+    overflow: hidden;
+    position: relative;
+    display: block;
+    width: 74px;
+    line-height: 2.3;
+    margin: auto;
+}
+.select_ing:after {
+    content:"\f0dc";
+    font-family: FontAwesome;
+    color: #000;
+    padding: 5px 14px;
+    position: absolute; right: 0; top: 0;
+    z-index: 1;
+    text-align: center;       
+    pointer-events: none;
+    box-sizing: border-box;   
+}
 @media(min-width:320px) and (max-width:1199px){
     .container{
         width: 100%;
@@ -220,8 +320,11 @@ select {
     .p4 .ing{
         width: 90px;
     }
-    h1, h2{
-        font-size: large;
+    h1{
+        font-size: 1.2rem;
+    }
+    h2{
+        font-size: 1rem;
     }
     .box-1, .box-3{
         width: 30%;
@@ -229,6 +332,18 @@ select {
     .box-2{
         width: 40%;
     }
+}
+@media(min-width:320px) and (max-width:580px){
+    .box-1 p, .box-2 p, .box-3 p {
+        width: 100%;
+        float: left;
+        margin: 0;
+        padding-top: 15px;
+    }
+    .select_info{
+        float: left;
+    }
+
 }
 @media(min-width:320px) and (max-width:680px){
     select{
@@ -259,4 +374,3 @@ select {
         padding: 9px;
     }
 }
-/*no more time...... :(*/
